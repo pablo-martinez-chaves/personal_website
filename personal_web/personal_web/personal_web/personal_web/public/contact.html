@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Network</title>
+  <title>Contact</title>
   <style>
     /* Basic reset and typography */
     * {
@@ -43,7 +43,7 @@
 
     /* Main content */
     main {
-      max-width: 900px;
+      max-width: 600px;
       margin: 40px auto;
       padding: 20px;
     }
@@ -51,44 +51,54 @@
     main h1 {
       text-align: center;
       color: #4e54c8;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
-    main p {
-      margin-bottom: 20px;
-      font-size: 1.1em;
-    }
-
-    /* List of classmates */
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li {
+    /* Form styling */
+    form {
       background: white;
-      margin-bottom: 15px;
-      padding: 12px 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
 
-    ul li a {
-      color: #4e54c8;
-      text-decoration: none;
+    label {
+      display: block;
+      margin-bottom: 8px;
       font-weight: 600;
+      color: #4e54c8;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
       transition: 0.3s;
     }
 
-    ul li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    input:focus, textarea:focus {
+      border-color: #4e54c8;
+      outline: none;
+      box-shadow: 0 0 8px rgba(78,84,200,0.3);
     }
 
-    ul li a:hover {
-      color: #ff7f50;
-      text-decoration: underline;
+    button {
+      background: #4e54c8;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #8f94fb;
+      transform: scale(1.05);
     }
 
     /* Footer */
@@ -104,14 +114,10 @@
     }
 
     /* Responsive */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      ul li {
-        padding: 10px;
+    @media (max-width: 600px) {
+      main {
+        margin: 20px;
+        padding: 15px;
       }
     }
   </style>
@@ -128,16 +134,20 @@
 </nav>
 
 <main>
-  <h1>Classmates' Network</h1>
+  <h1>Contact</h1>
 
-  <p>Below are links to classmates' websites:</p>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" value="">
 
-  <ul>
-    <li><a href="https://inigoiza.github.io/PW2/index.html" target="_blank">Classmate 1</a></li>
-    <li><a href="https://example.com" target="_blank">Classmate 2</a></li>
-    <li><a href="https://example.com" target="_blank">Classmate 3</a></li>
-    <li><a href="https://example.com" target="_blank">Classmate 4</a></li>
-  </ul>
+    <label for="email">Email:</label>
+    <input type="email" id="email" value="">
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="5" placeholder=""></textarea>
+
+    <button type="submit">Send</button>
+  </form>
 </main>
 
 <footer>

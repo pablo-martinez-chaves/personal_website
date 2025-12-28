@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Network</title>
+  <title>Fundamentals of Computer Engineering</title>
   <style>
     /* Basic reset and typography */
     * {
@@ -51,42 +51,42 @@
     main h1 {
       text-align: center;
       color: #4e54c8;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
-    main p {
-      margin-bottom: 20px;
-      font-size: 1.1em;
-    }
-
-    /* List of classmates */
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li {
+    section {
       background: white;
-      margin-bottom: 15px;
-      padding: 12px 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
 
-    ul li a {
+    section h2 {
+      color: #4e54c8;
+      margin-bottom: 15px;
+    }
+
+    section p, section ul {
+      margin-bottom: 15px;
+    }
+
+    section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 8px;
+    }
+
+    a {
       color: #4e54c8;
       text-decoration: none;
-      font-weight: 600;
       transition: 0.3s;
     }
 
-    ul li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    }
-
-    ul li a:hover {
+    a:hover {
       color: #ff7f50;
       text-decoration: underline;
     }
@@ -109,10 +109,6 @@
         flex-direction: column;
         align-items: center;
       }
-
-      ul li {
-        padding: 10px;
-      }
     }
   </style>
 </head>
@@ -128,16 +124,32 @@
 </nav>
 
 <main>
-  <h1>Classmates' Network</h1>
+  <h1>Fundamentals of Computer Engineering</h1>
 
-  <p>Below are links to classmates' websites:</p>
+  <section>
+    <h2>Description</h2>
+    <p>
+      This course introduces the fundamental concepts of computer engineering, including hardware, software, and computational systems.
+    </p>
+  </section>
 
-  <ul>
-    <li><a href="https://inigoiza.github.io/PW2/index.html" target="_blank">Classmate 1</a></li>
-    <li><a href="https://example.com" target="_blank">Classmate 2</a></li>
-    <li><a href="https://example.com" target="_blank">Classmate 3</a></li>
-    <li><a href="https://example.com" target="_blank">Classmate 4</a></li>
-  </ul>
+  <section>
+    <h2>Objectives</h2>
+    <ul>
+      <li>Understand the basic principles of computer science</li>
+      <li>Know the structure of a computational system</li>
+      <li>Introduce logical and computational thinking</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Learning Outcomes</h2>
+    <ul>
+      <li>Identify the main components of a computer</li>
+      <li>Understand the relationship between hardware and software</li>
+      <li>Apply basic concepts of computer engineering</li>
+    </ul>
+  </section>
 </main>
 
 <footer>

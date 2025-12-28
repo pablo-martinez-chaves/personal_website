@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    /* Basic reset and typography */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    /* Main content */
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    main h1 {
+      text-align: center;
+      color: #4e54c8;
+      margin-bottom: 30px;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #4e54c8;
+      margin-bottom: 15px;
+    }
+
+    section p, section ul {
+      margin-bottom: 15px;
+    }
+
+    section ul {
+      list-style-type: none;
+    }
+
+    section ul li {
+      margin-bottom: 8px;
+    }
+
+    section ul li a {
+      color: #4e54c8;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    section ul li a:hover {
+      color: #ff7f50;
+      text-decoration: underline;
+    }
+
+    /* Images container */
+    .image-container {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #4e54c8;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-container {
+        flex-direction: column;
+      }
+
+      .image-container img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="degree.html">Degree</a>
+  <a href="topic.html">Topic</a>
+  <a href="net.html">Network</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>About Me</h1>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>
+      I am a student pursuing a degree in Computer Engineering. I am interested in
+      software development and technology, and I am currently acquiring
+      basic knowledge in programming, systems, and web development. 
+      I am also passionate about football and currently play for Rayo Majadahonda.
+    </p>
+  </section>
+
+  <section>
+    <h2>Curriculum Vitae</h2>
+    <ul>
+      <li><strong>Name:</strong> Pablo Martínez Chaves</li>
+      <li><strong>Degree:</strong> Double Degree in Mathematical Engineering and Computer Engineering</li>
+      <li><strong>University:</strong> UFV</li>
+      <li><strong>Email:</strong> pamarcha07@gmail.com</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Images</h2>
+    <div class="image-container">
+      <img src="../images/profile2.jpg" alt="Personal photo 2">
+      <img src="../images/profile1.jpg" alt="Personal photo 1">
+    </div>
+  </section>
+
+  <section>
+    <h2>Social Media</h2>
+    <ul>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 - My Personal Website</p>
+</footer>
+
+</body>
+</html>
