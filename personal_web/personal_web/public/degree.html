@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Degree</title>
+  <title>Degree Program</title>
 
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -14,67 +13,63 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
+      background-color: #f4f6fb;
       color: #333;
       line-height: 1.6;
     }
 
-    /* Navigation */
     nav {
-      background: linear-gradient(90deg, #4e54c8, #8f94fb);
-      padding: 15px 30px;
+      background: linear-gradient(90deg, #5a5fd8, #9aa0ff);
+      padding: 15px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 15px;
+      color: #fff;
+      margin: 8px 15px;
       font-weight: 600;
+      text-decoration: none;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #ffd700;
-      transform: scale(1.1);
+      color: #ffdd57;
+      transform: scale(1.05);
     }
 
-    /* Main */
     main {
       max-width: 1100px;
       margin: 40px auto;
       padding: 20px;
     }
 
-    main h1 {
+    h1 {
       text-align: center;
-      color: #4e54c8;
+      color: #5a5fd8;
       margin-bottom: 30px;
     }
 
     section {
-      background: white;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
 
     section h2 {
-      color: #4e54c8;
+      color: #5a5fd8;
       margin-bottom: 15px;
     }
 
-    /* Table */
     table {
       width: 100%;
       border-collapse: collapse;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       font-size: 0.95em;
     }
 
@@ -84,31 +79,28 @@
     }
 
     th {
-      background: #4e54c8;
-      color: white;
+      background-color: #5a5fd8;
+      color: #fff;
     }
 
     tr:nth-child(even) {
-      background: #f2f2f2;
+      background-color: #f0f1ff;
     }
 
     tr:hover {
-      background: #dcdcff;
+      background-color: #e2e4ff;
     }
 
-    /* Footer */
     footer {
-      background: #4e54c8;
-      color: white;
+      background: #5a5fd8;
+      color: #fff;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9em;
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
+      margin-top: 40px;
     }
 
-    /* Responsive table */
     @media (max-width: 768px) {
       table, th, td {
         display: block;
@@ -130,10 +122,10 @@
       }
 
       td::before {
+        content: attr(data-label);
         position: absolute;
         left: 15px;
         font-weight: bold;
-        content: attr(data-label);
       }
     }
   </style>
@@ -154,153 +146,117 @@
   <h1>Computer Engineering Degree</h1>
 
   <section>
-    <h2>Degree Description</h2>
+    <h2>Program Overview</h2>
     <p>
-      The Computer Engineering Degree trains professionals capable of designing,
-      developing and maintaining computer systems, software, and technological solutions.
+      This degree provides a solid foundation in computer systems, programming,
+      and software development, preparing students to solve real-world technological problems.
     </p>
   </section>
 
   <section>
-    <h2>Curriculum</h2>
+    <h2>Study Plan</h2>
 
     <table>
       <tr>
         <th>Year</th>
         <th>Subject</th>
         <th>Category</th>
-        <th>Short description</th>
+        <th>Description</th>
       </tr>
 
-      <!-- 1st year -->
+      <!-- First year -->
       <tr>
         <td data-label="Year">1st year</td>
-        <td data-label="Subject">Discrete Mathematics</td>
+        <td data-label="Subject">Introduction to Software Development</td>
+        <td data-label="Category">Programming</td>
+        <td data-label="Description">Basic programming concepts and problem-solving techniques.</td>
+      </tr>
+      <tr>
+        <td data-label="Year">1st year</td>
+        <td data-label="Subject">Applied Mathematics for Engineers</td>
         <td data-label="Category">Mathematics</td>
-        <td data-label="Short description">Mathematical structures and reasoning used in computing.</td>
+        <td data-label="Description">Mathematical methods commonly used in technical disciplines.</td>
       </tr>
       <tr>
         <td data-label="Year">1st year</td>
-        <td data-label="Subject">The Company and Its Processes</td>
-        <td data-label="Category">Business</td>
-        <td data-label="Short description">Introduction to organizations, processes, and business context.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">1st year</td>
-        <td data-label="Subject">Electronics and Computer Technology</td>
+        <td data-label="Subject">Foundations of Computer Technology</td>
         <td data-label="Category">Computer Systems</td>
-        <td data-label="Short description">Basic electronics and hardware concepts related to computers.</td>
+        <td data-label="Description">Overview of hardware components and basic digital concepts.</td>
       </tr>
       <tr>
         <td data-label="Year">1st year</td>
-        <td data-label="Subject">Mathematics for Engineering I</td>
-        <td data-label="Category">Mathematics</td>
-        <td data-label="Short description">Core mathematical tools applied to engineering problems.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">1st year</td>
-        <td data-label="Subject">Object-Oriented Programming</td>
-        <td data-label="Category">Software Development</td>
-        <td data-label="Short description">Programming with classes, objects, and basic OOP principles.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">1st year</td>
-        <td data-label="Subject">Knowledge Management and Personal Skills</td>
-        <td data-label="Category">Human Skills</td>
-        <td data-label="Short description">Personal development and skills for academic and professional growth.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">1st year</td>
-        <td data-label="Subject">Introduction to Programming</td>
-        <td data-label="Category">Software Development</td>
-        <td data-label="Short description">Fundamentals of programming and problem solving.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">1st year</td>
-        <td data-label="Subject">Fundamentals of Computer Engineering</td>
-        <td data-label="Category">Computer Engineering</td>
-        <td data-label="Short description">Introduction to computing foundations and engineering context.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">1st year</td>
-        <td data-label="Subject">Logic and Critical Thinking</td>
+        <td data-label="Subject">Logical Reasoning and Argumentation</td>
         <td data-label="Category">Foundations</td>
-        <td data-label="Short description">Logical reasoning and critical analysis applied to arguments.</td>
+        <td data-label="Description">Development of analytical thinking and structured reasoning.</td>
       </tr>
       <tr>
         <td data-label="Year">1st year</td>
-        <td data-label="Subject">History of Science and Technology</td>
-        <td data-label="Category">Humanities</td>
-        <td data-label="Short description">Historical development of science and technology.</td>
+        <td data-label="Subject">Professional and Academic Skills</td>
+        <td data-label="Category">Human Skills</td>
+        <td data-label="Description">Communication, teamwork, and personal organization skills.</td>
       </tr>
 
-      <!-- 2nd year -->
+      <!-- Second year -->
       <tr>
         <td data-label="Year">2nd year</td>
-        <td data-label="Subject">Statistics</td>
-        <td data-label="Category">Mathematics</td>
-        <td data-label="Short description">Basic statistical methods for data analysis.</td>
+        <td data-label="Subject">Data Structures</td>
+        <td data-label="Category">Programming</td>
+        <td data-label="Description">Efficient organization and manipulation of data in software.</td>
       </tr>
       <tr>
         <td data-label="Year">2nd year</td>
-        <td data-label="Subject">Computer Architecture and Organization</td>
+        <td data-label="Subject">Computer Architecture</td>
         <td data-label="Category">Computer Systems</td>
-        <td data-label="Short description">Internal structure of computers and how components work together.</td>
+        <td data-label="Description">How processors, memory, and hardware components interact.</td>
       </tr>
       <tr>
         <td data-label="Year">2nd year</td>
-        <td data-label="Subject">Data Structures and Algorithms</td>
-        <td data-label="Category">Software Development</td>
-        <td data-label="Short description">Core data structures and algorithmic problem solving.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">2nd year</td>
-        <td data-label="Subject">Operating Systems</td>
+        <td data-label="Subject">Operating Systems Concepts</td>
         <td data-label="Category">Computer Systems</td>
-        <td data-label="Short description">Processes, memory, file systems, and OS fundamentals.</td>
+        <td data-label="Description">Management of processes, memory, and system resources.</td>
       </tr>
       <tr>
         <td data-label="Year">2nd year</td>
-        <td data-label="Subject">Databases</td>
+        <td data-label="Subject">Relational Databases</td>
         <td data-label="Category">Data</td>
-        <td data-label="Short description">Relational database fundamentals.</td>
+        <td data-label="Description">Design and use of structured databases using SQL.</td>
+      </tr>
+      <tr>
+        <td data-label="Year">2nd year</td>
+        <td data-label="Subject">Software Design Principles</td>
+        <td data-label="Category">Software Engineering</td>
+        <td data-label="Description">Introduction to software modeling and structured development.</td>
       </tr>
 
-      <!-- 3rd year -->
+      <!-- Third year -->
       <tr>
         <td data-label="Year">3rd year</td>
-        <td data-label="Subject">Artificial Intelligence I</td>
+        <td data-label="Subject">Introduction to Artificial Intelligence</td>
         <td data-label="Category">Artificial Intelligence</td>
-        <td data-label="Short description">Introduction to AI concepts and techniques.</td>
+        <td data-label="Description">Core ideas behind intelligent systems and decision making.</td>
       </tr>
       <tr>
         <td data-label="Year">3rd year</td>
-        <td data-label="Subject">Networks and Distributed Systems</td>
+        <td data-label="Subject">Computer Networks</td>
         <td data-label="Category">Networking</td>
-        <td data-label="Short description">Communication networks and distributed computing.</td>
+        <td data-label="Description">Data communication, protocols, and network architectures.</td>
+      </tr>
+      <tr>
+        <td data-label="Year">3rd year</td>
+        <td data-label="Subject">Advanced Software Development</td>
+        <td data-label="Category">Programming</td>
+        <td data-label="Description">Integration of complex software components and services.</td>
+      </tr>
+      <tr>
+        <td data-label="Year">3rd year</td>
+        <td data-label="Subject">Human-Computer Interaction</td>
+        <td data-label="Category">Human Skills</td>
+        <td data-label="Description">Designing intuitive and user-friendly digital interfaces.</td>
       </tr>
 
-      <!-- 4th year -->
+      <!-- Fourth year -->
       <tr>
         <td data-label="Year">4th year</td>
-        <td data-label="Subject">Cryptography</td>
+        <td data-label="Subject">Cybersecurity Fundamentals</td>
         <td data-label="Category">Security</td>
-        <td data-label="Short description">Foundations of cryptographic methods and secure communication.</td>
-      </tr>
-      <tr>
-        <td data-label="Year">4th year</td>
-        <td data-label="Subject">Final Degree Project</td>
-        <td data-label="Category">Projects</td>
-        <td data-label="Short description">Final project integrating all acquired knowledge.</td>
-      </tr>
-
-    </table>
-  </section>
-</main>
-
-<footer>
-  <p>© 2025 - My Personal Website</p>
-</footer>
-
-</body>
-</html>
+        <td data-label="Description">Threats, vulnerabilities, and protec
